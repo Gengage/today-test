@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="main.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
@@ -11,6 +11,7 @@
             <div class="modal">
                 <header>안내사항</header>
                 <div class="body">2024년 06월 21일 서비스 종료됩니다</div>
+             
                 <modal-footer>
                     <button>확인</button>
                 </modal-footer>
@@ -22,71 +23,79 @@
             <img src="./img/logo2.jpg" alt="로고">
         </a>
         </div>
-        <div class="menu">
-        <span class = 'navreview'>리뷰
-        </span>
-        <span class = 'navdebate'>토론</span>
-        <span class = 'navMinfo'>영화정보</span>
-        <span class = 'navtheater'>영화관정보</span>
-        </div>
+        <ul>
+            <li>
+                <a class="review" href="">간단리뷰 </a>
+            </li>
+            <li>
+                <a class="debate" href="">영화토론 </a>
+            </li>
+            <li>
+                <a class="info" href="">영화정보 </a>
+            </li>
+            <li>
+                <a class="goods" href="">영화상품 </a>
+            </li>
+            <li>
+                <a class="theater" href="">영화관 정보 </a>
+            </li>
+        </ul>
     </div>
     </header>
-        <main>
-            <div id="wrap">
-                <div class="container">
-                    <ul id="best_search">
-                        <li><p>박스오피스</p></li>
-                        <li>
-                            <dl class="time1" style="display:flex;">
-                                <dd><a class="t" href="#"><div class="num">1</div>댓글부대</a></dd>
-                                <dd><a class="t" href="#"><div class="num">2</div>고질라 X 콩: 뉴 엠파이어</a></dd>
-                                <dd><a class="t" href="#"><div class="num">3</div>파묘</a></dd>
-                                <dd><a class="t" href="#"><div class="num">4</div>듄: 파트2</a></dd>
-                                <dd><a class="t" href="#"><div class="num">5</div>극장판 스파이 패밀리 코드 : 화이트</a></dd>
+    <main>
+        
+        <div class="body">
+            <button type="button" class="login_button" onclick="location.href='login.html' ">로그인하기</button>
+        </div>
+        <div id="wrap">
+            <div class="container">
+                <ul id="best_search">
+                    <li><p>박스오피스</p></li>
+                    <li>
+                        <dl class="time1" style="display:none;">
+                            <dd><a class="t" href="#"><div class="num">1</div>댓글부대</a></dd>
+                            <dd><a class="t" href="#"><div class="num">2</div>고질라 X 콩: 뉴 엠파이어</a></dd>
+                            <dd><a class="t" href="#"><div class="num">3</div>파묘</a></dd>
+                            <dd><a class="t" href="#"><div class="num">4</div>듄: 파트2</a></dd>
+                            <dd><a class="t" href="#"><div class="num">5</div>극장판 스파이 패밀리 코드 : 화이트</a></dd>
                             </dl>
-                            <dl class="time2" style="display:none;">
-                                <dd><a class="t" href="#"><div class="num">6</div>유미의 세포들 더 무비</a></dd>
-                                <dd><a class="t" href="#"><div class="num">7</div>1980</a></dd>
-                                <dd><a class="t" href="#"><div class="num">8</div>기동전사 건담 시드 프리덤</a></dd>
-                                <dd><a class="t" href="#"><div class="num">9</div>악은 존재하지 않는다</a></dd>
-                                <dd><a class="t" href="#"><div class="num">10</div>패왕별희 디 오리지널</a></dd>
+                        <dl class="time2" style="display:none;">
+                            <dd><a class="t" href="#"><div class="num">6</div>유미의 세포들 더 무비</a></dd>
+                            <dd><a class="t" href="#"><div class="num">7</div>1980</a></dd>
+                            <dd><a class="t" href="#"><div class="num">8</div>기동전사 건담 시드 프리덤</a></dd>
+                            <dd><a class="t" href="#"><div class="num">9</div>악은 존재하지 않는다</a></dd>
+                            <dd><a class="t" href="#"><div class="num">10</div>패왕별희 디 오리지널</a></dd>
                             </dl>
-                            <dl class="time3" style="display:none;">
-                                <dd><a class="t" href="#"><div class="num">11</div>목스박</a></dd>
-                                <dd><a class="t" href="#"><div class="num">12</div>쿵푸팬더4</a></dd>
-                                <dd><a class="t" href="#"><div class="num">13</div>신 가면라이더</a></dd>
-                                <dd><a class="t" href="#"><div class="num">14</div>로봇 드림</a></dd>
-                                <dd><a class="t" href="#"><div class="num">15</div>패스트 라이브즈</a></dd>
-                            </dl>
-                            <dl class="time4" style="display:none;">
-                                <dd><a class="t" href="#"><div class="num">16</div>가여운 것들</a></dd>
-                                <dd><a class="t" href="#"><div class="num">17</div>탐정 말로</a></dd>
-                                <dd><a class="t" href="#"><div class="num">18</div>남은 인생 10년</a></dd>
-                                <dd><a class="t" href="#"><div class="num">19</div>영웅본색</a></dd>
-                                <dd><a class="t" href="#"><div class="num">20</div>웡카</a></dd>
-                            </dl>
-                        </li>
-                        <li>
-                            <a class="best_add ad1" style="cursor:pointer" onClick="javascript:view('0')">&#62;</a>
-                            <a class="best_add ad2" onClick="javascript:view('1')" style="display:none;cursor:pointer" >&#62;</a>
-                            <a class="best_add ad3" onClick="javascript:view('2')" style="display:none;cursor:pointer" >&#62;</a>
-                            <a class="best_add ad4" onClick="javascript:view('3')" style="display:none;cursor:pointer" >&#60;</a>
-                        </li>
-                    </ul>
-                </div>
-           </div>
-        </main>
-        <footer>
-            <div class="icons">
-              <i class="fa-brands fa-instagram"></i>
-              <i class="fa-brands fa-facebook"></i>
-              <i class="fa-brands fa-twitter"></i>
-              <i class="fa-brands fa-youtube"></i>
+                        <dl class="time3" style="display:none;">
+                            <dd><a class="t" href="#"><div class="num">11</div>목스박</a></dd>
+                            <dd><a class="t" href="#"><div class="num">12</div>쿵푸팬더4</a></dd>
+                            <dd><a class="t" href="#"><div class="num">13</div>신 가면라이더</a></dd>
+                            <dd><a class="t" href="#"><div class="num">14</div>로봇 드림</a></dd>
+                            <dd><a class="t" href="#"><div class="num">15</div>패스트 라이브즈</a></dd>
+                        </dl>
+                        <dl class="time4" style="display:none;">
+                            <dd><a class="t" href="#"><div class="num">16</div>가여운 것들</a></dd>
+                            <dd><a class="t" href="#"><div class="num">17</div>탐정 말로</a></dd>
+                            <dd><a class="t" href="#"><div class="num">18</div>남은 인생 10년</a></dd>
+                            <dd><a class="t" href="#"><div class="num">19</div>영웅본색</a></dd>
+                            <dd><a class="t" href="#"><div class="num">20</div>웡카</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <a class="best_add ad1" style="cursor:pointer" onClick="javascript:view('0')">&#62;</a>
+                        <a class="best_add ad2" onClick="javascript:view('1')" style="display:none;cursor:pointer" >&#62;</a>
+                        <a class="best_add ad3" onClick="javascript:view('2')" style="display:none;cursor:pointer" >&#62;</a>
+                        <a class="best_add ad4" onClick="javascript:view('3')" style="display:none;cursor:pointer" >&#60;</a>
+                    </li>
+                </ul>
             </div>
-            <div class="rights">
+        </div>
+    </main>
+    <footer>
+    <div class="rights">
     Copyright All rights reserved.
-            </div>
-          </footer>
+    </div>
+    </footer>
         <script src="script.js"></script>
 </body> 
 </html>

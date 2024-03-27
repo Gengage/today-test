@@ -58,14 +58,14 @@ function view(arg){
     }
 }
 var viewcount = 0;
-var rtcarousel = setInterval(function(){ view(viewcount) },1500); //자동
+var rtcarousel = setInterval(function(){ view(viewcount) },1000); //자동
 
 $("#best_search").mouseenter(function() {
     clearInterval(rtcarousel);
 });
 
 $("#best_search").mouseleave(function() {
-    rtcarousel = setInterval(function(){ view(viewcount) },1500); //수동
+    rtcarousel = setInterval(function(){ view(viewcount) },1000); //마우스 때고 몇초뒤 변경
 })
 
 //모달파트
