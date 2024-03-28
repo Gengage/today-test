@@ -13,7 +13,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #4070f4;
+    background-color: #0171d3;
     column-gap: 30px;
 }
 .form{
@@ -22,7 +22,7 @@
     width: 100%;
     padding: 30px;
     border-radius: 6px;
-    background: #FFF;
+    background: white;
 }
 .form.signup{
     opacity: 0;
@@ -80,13 +80,14 @@ form{
     padding: 5px;
 }
 .field button{
-    color: #fff;
+    color: white;
     background-color: #0171d3;
     transition: all 0.3s ease;
     cursor: pointer;
 }
-.field button:hover{
-    background-color: #016dcb;
+.login .field button:hover{
+    background-color: rgb(229, 54, 30);
+    transition: 0.1s;
 }
 .form-link{
     text-align: center;
@@ -110,7 +111,7 @@ form{
     height: 1px;
     width: 100%;
     margin: 36px 0;
-    background-color: #d4d4d4;
+    background-color: #CACACA;
 }
 .line::before{
     content: '또는';
@@ -118,7 +119,7 @@ form{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #FFF;
+    background-color: white;
     color: #d41414;
     padding: 0 15px;
 }

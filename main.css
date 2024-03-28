@@ -53,9 +53,13 @@ a{
     border-radius: 20px;
     width:10rem;
     height:5rem;
-    color:red;
-    border:3px solid red;
+    color:rgb(229, 54, 30);
+    border:1px solid;
     z-index: 1;
+}
+.login_button:hover{
+    background-color: #0171d3;
+    color:white;
 }
 /* 박스오피스 파트 */
 #wrap {
@@ -154,12 +158,12 @@ footer {
     z-index: 5;
 }
 .modal{
-    /* border: 1px solid red; */
+    border: 1px solid white;
     width: 30%; height: 300px; min-width: 300px;
     overflow: auto;
     border-radius: 5px;
     background-color: transparent;
-    color: wheat; font-size: .8rem; font-weight: 500;
+    color: white; font-size: .8rem; font-weight: 500;
     box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, .3);
     display: flex;
     flex-flow: column;
