@@ -1,0 +1,135 @@
+*{
+    font-family: 'KCC-Hanbit';
+}
+@font-face {
+    font-family: 'KCC-Hanbit';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/KCC-Hanbit.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+.wrap {
+    
+    border-bottom: 1px dashed rgb(128,128,128);
+    height: 40vh;
+    display: flex;
+    
+    align-items: center;
+    flex-direction: column;
+}
+.back{
+    position: absolute;
+    top:2%;
+    left:3%;
+    font-size: 20px;
+    z-index: 3;
+}
+p{
+   font-size: 1.5rem;
+    border-radius: 30px;
+    margin:0;
+    margin-top: 5px;
+    padding:0;
+}
+h1{
+    margin-top: 5px;
+}
+/* 별점 파트 */
+.rating__label--full .star-icon {
+	background-position: right;
+}
+.rating__label--half .star-icon {
+	background-position: left;
+}
+.rating {
+    float: none;
+    width: 200px;
+    display: flex;
+}
+.rating__input {
+    display: none;
+}
+
+.rating__label {
+    width: 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.star-icon {
+    width: 20px;
+    height: 40px;
+    display: block;
+    position: relative;
+    left: 0;
+    background-image: url('https://velog.velcdn.com/images/jellykelly/post/9957327f-f358-4c25-9989-5bb3dd5755d6/image.svg');
+    background-repeat: no-repeat;
+    background-size: 40px;
+}
+.star-icon.filled {
+    background-image: url(' https://velog.velcdn.com/images/jellykelly/post/10caf033-b0ef-4d58-804b-6e33395e4ea5/image.svg');
+}
+.star-icon--full .star-icon {
+    background-position: right;
+}
+.star-icon--half .star-icon {
+    background-position: left;
+}
+.star-icon {
+    opacity: 0.7;
+    cursor: pointer
+}
+
+/* 감상평 파트 */
+
+.this_input_write{
+    margin-top: 30px;
+    font-size: 1.5rem;
+    width: 40%;
+    border:1px dashed rgba(128,128,128);
+}
+.input_write{
+    margin-top: 30px;
+    width:40%;
+    font-size: 2rem;
+    background-color: rgba(128,128,128,0.4);
+    cursor:pointer;
+}
+.input_write:hover
+{
+    background-color: rgb(255 112 9);
+}
+@media (max-width: 1000px) {
+    .this_input_write, .input_write {
+        width:60%; }
+}
+
+img{
+    margin-top:10px;
+    width:30px;
+}
+
+.container
+{
+    border-bottom:1px solid rgb(128,128,128);
+}
+.writer, .date , .blind
+{
+    padding-bottom: 5px;
+    padding-left: 10px;
+    margin:0;
+}
+.star{
+    display:flex;
+    align-items: center;
+}
+.star_num
+{
+    margin-top: 10px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.container button{
+    background-color: white;
+}
+.container button:hover{
+    background-color: aqua;
+}

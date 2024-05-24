@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'KCC-Hanbit';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/KCC-Hanbit.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    font-family: 'KCC-Hanbit';
+}
+.container
+{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* border: 1px solid red; */
+}
+.containerR
+{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* border: 1px solid red; */
+}
+img{
+    width:20%;
+    height: 30%;
+    margin:10px;
+}
+h1{
+    display:flex;
+    justify-content: center;
+}
+
+input{
+    position: absolute;
+    top: 3%;
+    left:2%;
+    font-size: 20px;
+    z-index: 3;
+}
+@media (max-width: 640px) {
+    h1 {            
+        font-size: 17px; }
+  }
+@media (max-width: 640px) {
+    input { 
+        top:1%;
+        font-size: 15px; }
+  }
+@media (max-width: 480px) {
+    input { display:none; }
+  }

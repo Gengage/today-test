@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!--  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"> -->
+<link rel="stylesheet" href="./css/review.css">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" class="back" value="뒤로가기" onclick="location.href='reviewNA.html'">
+	<div class="wrap">
+        <p>파묘</p>
+        <h1>별점을 선택해주세요</h1>
+    <div class="rating">
+        <label class="rating__label rating__label--half" for="starhalf">
+            <input type="radio" id="starhalf" class="rating__input" name="rating" value="">
+            <span class="star-icon"></span>
+        </label>
+        <label class="rating__label rating__label--full" for="star1">
+            <input type="radio" id="star1" class="rating__input" name="rating" value="">
+            <span class="star-icon"></span>
+        </label>
+        <label class="rating__label rating__label--half" for="star1half">
+            <input type="radio" id="star1half" class="rating__input" name="rating" value="">
+            <span class="star-icon"></span>
+        </label>
+        <label class="rating__label rating__label--full" for="star2">
+            <input type="radio" id="star2" class="rating__input" name="rating" value="">
+            <span class="star-icon"></span>
+        </label>
+        <label class="rating__label rating__label--half" for="star2half">
+            <input type="radio" id="star2half" class="rating__input" name="rating" value="">
+            <span class="star-icon"></span>
+        </label>
+        <label class="rating__label rating__label--full" for="star3">
+            <input type="radio" id="star3" class="rating__input" name="rating" value="">
+            <span class="star-icon"></span>
+        </label>
+        <label class="rating__label rating__label--half" for="star3half">
+            <input type="radio" id="star3half" class="rating__input" name="rating" checked>
+            <span class="star-icon"></span>
+        </label>
+        <label class="rating__label rating__label--full" for="star4">
+            <input type="radio" id="star4" class="rating__input" name="rating" value="">
+            <span class="star-icon"></span>
+        </label>
+        <label class="rating__label rating__label--half" for="star4half">
+            <input type="radio" id="star4half" class="rating__input" name="rating" value="">
+            <span class="star-icon"></span>
+        </label>
+        <label class="rating__label rating__label--full" for="star5">
+            <input type="radio" id="star5" class="rating__input" name="rating" value="">
+            <span class="star-icon"></span>
+        </label>
+    </div>
+  
+
+    <input type="text" class="this_input_write" placeholder="감상평을 20자 내로 작성해주세요."  maxlength='20'>
+    <button type = "submit" class ="input_write"  >등록하기</button> 
+    
+</div>
+    </div>
+    <div class="title_box">
+        <div class="container">
+        <div class="star">
+            <img src="./img/star.JPG" alt="">
+            <img src="./img/star.JPG" alt="">
+            <img src="./img/star.JPG" alt="">
+            <img src="./img/star.JPG" alt="">
+            <div class="star_num">8점</div>
+        </div>
+        <div class="area_review_content">
+        <span class="desc _text">죽어서도 끊나지 않은 영혼의 한일전 </span>
+        </div>
+        <dl class="info">
+            <dt class="blind">작성자</dt> 
+            <dd class="writer" data-writer-id="kang****">pon0****</dd>
+            <dt class="blind">작성일</dt>
+            <dd class="date">2024.03.22. 20:53</dd>
+            <button>신고하기</button>
+        </div>
+    <div class="container">
+        <div class="star">
+            <img src="./img/star.JPG" alt="">
+            <img src="./img/star.JPG" alt="">
+            <img src="./img/star.JPG" alt="">
+            <img src="./img/star_half.JPG" alt="">
+            <div class="star_num">7점</div>
+        </div>
+        <div class="area_review_content">
+        <span class="desc _text">극장에서 떠들고 휴대폰 불빛쏘는 것들을 저 묫자리에 파묻고 싶다 </span>
+        </div>
+        <dl class="info">
+            <dt class="blind">작성자</dt>
+            <dd class="writer" data-writer-id="kang****">hang****</dd>
+            <dt class="blind">작성일</dt>
+            <dd class="date">2024.03.23. 09:25</dd>
+            <button>신고하기</button>
+    </div>
+    <div class="container">
+        <div class="star">
+            <img src="./img/star.JPG" alt="">
+            <img src="./img/star.JPG" alt="">
+            <img src="./img/star.JPG" alt="">
+        <div class="star_num">6점</div>
+        </div>
+        <div class="area_review_content">
+        <span class="desc _text">초중반의 꽤 높은몰입도, 후반으로 갈 수록 산으로 가는 전개</span>
+        </div>
+        <dl class="info">
+            <dt class="blind">작성자</dt> 
+            <dd class="writer" data-writer-id="kang****">heo_****</dd>
+            <dt class="blind">작성일</dt>
+            <dd class="date">2024.03.24. 11:25</dd>
+            <button>신고하기</button>
+        </div>
+    </div>
+    <script src="./js/review.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'KCC-Hanbit';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/KCC-Hanbit.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'KCC-Hanbit';
+}
+input{
+    position: absolute;
+    top:5px;
+    left:5px;
+    font-size: 20px;
+    z-index: 3;
+}
+.middle h1{
+    z-index: 1;
+    /* border:1px solid red; */
+    display:flex;
+    position: fixed;
+    width:100%;
+    margin-top: 15px;
+    justify-content: center;
+}
+.wrap {
+    padding: 40px 0;
+    background-color: #9bbbd4;
+}
+
+.wrap .chat {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.wrap .chat .icon {
+    position: relative;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #eee;
+}
+
+.wrap .chat img{
+    position: absolute;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    color: #aaa;
+}
+
+.wrap .chat .textbox {
+    position: relative;
+    display: inline-block;
+    max-width: calc(100% - 70px);
+    padding: 10px;
+    margin-top: 7px;
+    font-size: 13px;
+    border-radius: 10px;
+}
+
+.wrap .chat .textbox::before {
+    position: absolute;
+    display: block;
+    top: 0;
+    font-size: 1.5rem;
+}
+/* 채팅 상대방 */
+.wrap .ch1 .textbox {
+    margin-left: 20px;
+    background-color: white;
+}
+
+.wrap .ch1 .textbox::before {
+    left: -15px;
+    content: "◀";
+    color: white;
+}
+
+.wrap .ch3 .textbox {
+    margin-left: 20px;
+    background-color: white;
+}
+
+.wrap .ch3 .textbox::before {
+    left: -15px;
+    content: "◀";
+    color: white;
+}
+/* 채팅 본인 */
+.wrap .ch2 {
+    flex-direction: row-reverse;
+}
+
+.wrap .ch2 .textbox {
+    margin-right: 20px;
+    background-color: yellow;
+}
+
+.wrap .ch2 .textbox::before {
+    right: -15px;
+    content: "▶";
+    color: yellow;
+}
+
+

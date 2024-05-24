@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+    <title>메인페이지</title>
+    <body>
+        <div class="modal-container">
+            <div class="modal">
+                <header>안내사항</header>
+                <div class="body">2024년 06월 21일 서비스 종료됩니다</div>
+             
+                <modal-footer>
+                    <button>확인</button>
+                </modal-footer>
+            </div> 
+        </div>
+    <header>
+        <div class="gnb">
+        <div class="logo"><a href="">
+            <img src="./img/logo2.jpg" alt="로고">
+        </a>
+        </div>
+        <ul>
+            <li>
+                <a class="review" href="reviewN.html">간단리뷰 </a>
+            </li>
+            <li>
+                <a class="debate" href="debate.html">영화토론 </a>
+            </li>
+            <li>
+                
+                <a class="info" href="">영화정보 </a>
+            </li>
+            <li>
+                <a class="goods" href="">영화상품 </a>
+            </li>
+            <li>
+                <a class="theater" href="">영화관 정보 </a>
+            </li>
+        </ul>
+    </div>
+    </header>
+    <main>
+        <div class="showinfo">
+<p>안녕하세요 저희 사이트는 위쪽의</p>
+<p>간단리뷰를 통한 스포일러 없는 감상평과</p>
+<p>영화토론을 통해 다른사람과</p>
+<p>영화에 대해 이야기 해볼수 있습니다</p>
+<p>글 작성외엔 로그인이 필요하지 않으니</p>
+<p>편히 이용하세요</p>
+        </div>
+            <button type="button" class="login_button" onclick="location.href='login.html' ">로그인하기</button>
+        <div id="wrap">
+            <div class="container">
+              
+                <ul id="best_search">
+                    <li><p>한 주의 박스오피스</p></li>
+                    <li>
+                        <dl class="time1" style="display:none;">
+                            <dd><a class="t" href=""><div class="num">1</div>파묘</a></dd>
+                            <dd><a class="t" href=""><div class="num">2</div>댓글부대</a></dd>
+                            <dd><a class="t" href=""><div class="num">3</div>고질라 X 콩: 뉴 엠파이어</a></dd>
+                            <dd><a class="t" href=""><div class="num">4</div>듄: 파트2</a></dd>
+                            <dd><a class="t" href=""><div class="num">5</div>극장판 스파이 패밀리 코드 : 화이트</a></dd>
+                            </dl>
+                        <dl class="time2" style="display:none;">
+                            <dd><a class="t" href=""><div class="num">6</div>1980</a></dd>
+                            <dd><a class="t" href=""><div class="num">7</div>악은 존재하지 않는다</a></dd>
+                            <dd><a class="t" href=""><div class="num">8</div>씬</a></dd>
+                            <dd><a class="t" href=""><div class="num">9</div>가여운 것들</a></dd>
+                            <dd><a class="t" href=""><div class="num">10</div>비키퍼</a></dd>
+                            </dl>
+                        <dl class="time3" style="display:none;">
+                            <dd><a class="t" href=""><div class="num">11</div>패왕별희 디 오리지널</a></dd>
+                            <dd><a class="t" href=""><div class="num">12</div>유미의 세포들 더 무비</a></dd>
+                            <dd><a class="t" href=""><div class="num">13</div>패스트 라이브즈</a></dd>
+                            <dd><a class="t" href=""><div class="num">14</div>탐정 말로</a></dd>
+                            <dd><a class="t" href=""><div class="num">15</div>윙카</a></dd>
+                        </dl>
+                        <dl class="time4" style="display:none;">
+                            <dd><a class="t" href=""><div class="num">16</div>로봇 드림</a></dd>
+                            <dd><a class="t" href=""><div class="num">17</div>이승윤 콘서트 도킹:리프트오프</a></dd>
+                            <dd><a class="t" href=""><div class="num">18</div>땅에 쓰는 시</a></dd>
+                            <dd><a class="t" href=""><div class="num">19</div>마더스</a></dd>
+                            <dd><a class="t" href=""><div class="num">20</div>루팡 3세: 칼리오스트로의 성</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <a class="best_add ad1" style="cursor:pointer" onClick="javascript:view('0')">&#62;</a>
+                        <a class="best_add ad2" onClick="javascript:view('1')" style="display:none;cursor:pointer" >&#62;</a>
+                        <a class="best_add ad3" onClick="javascript:view('2')" style="display:none;cursor:pointer" >&#62;</a>
+                        <a class="best_add ad4" onClick="javascript:view('3')" style="display:none;cursor:pointer" >&#60;</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+    <div class="rights">
+    Copyright All rights reserved.
+    </div>
+    </footer>
+        <script src="./js/script.js"></script>
+</body> 
+</html>

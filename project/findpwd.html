@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>findpwd_page</title>
+    <link rel = "stylesheet" href="css/findpwd.css">
+</head>
+<body>
+    <div class="findpwd_container">
+        <div>
+            <img class = "lock" src="img/lock.png" alt="logo">
+            <ul>
+                <li class="first">로그인에 문제가 있나요?</li>
+                <li class="two">이메일 주소나 전화번호를 입력하시면 비밀번호를 전송해드립니다</li>
+            </ul>
+        </div>
+        <form name="findInfo" action="" method="post">
+            <input class = "mailPhName" type="text" placeholder="이메일, 전화번호" required/>
+            <button class = "loginLink"><a href="login.html" >로그인 링크 보내기</a></button>
+        </form>
+        
+        <div class="backTo">
+            <button class = "backToLogin"><a href="login.html">로그인으로 돌아가기</a></button>
+        </div>
+    </div>
+    <script src="js/findpwd.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+
+@font-face {
+    font-family: 'KCC-Hanbit';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/KCC-Hanbit.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+*{  
+    font-family: 'KCC-Hanbit';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+    
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    height: 50px;
+}
+body {
+    /* border:1px solid red; */
+    position: absolute;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: #0171d3;
+    width: 100%;
+    height: 100vh;
+}
+.findpwd_container{
+    /* border:1px solid red; */
+    background: white;
+    width: 400px;
+    /* position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%); */
+    height: 500px;
+    position: absolute;
+    margin-bottom: 0.6rem;
+    
+    
+    text-align: center;
+}
+header{
+    background-color: white;
+    height: 65px;
+    border-bottom: 1px solid rgb(213, 213, 213);
+}
+.logo .brand_logo{
+    width: 130px;
+    height: 55px;
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+}
+.lock{
+    margin: 1.5rem auto;
+    width: 100px;
+}
+.first{
+    font-weight: bold;
+    margin: 0 auto 0.5rem;
+}
+.two{
+    margin: 0.5rem 2.8rem 0.5rem;
+    color: rgb(133, 130, 130);;
+}
+input{
+    display: block;/*세로박스 영역*/
+    width: 300px;
+    height: 40px;
+    margin: 0 auto 0.4rem;
+    background: #fafafa;
+    border: 1px solid #e0dfdf;
+    border-radius: 4px;
+    text-indent: 7px;
+    outline-color: rgb(163, 162, 162);
+    font-size: 15px;
+}
+.mailPhName
+{
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.loginLink{
+   
+    width: 300px;
+    height: 40px;
+    margin-top: 100px;
+    margin: 30px auto;
+    border:none;
+    border-radius: 10px;
+    background: rgb(164, 216, 253);
+    font-weight: bold;
+    font-size: medium;
+    color: white;
+}
+.loginLink a{
+    color: white;
+    font-size: 15px;
+}
+.backTo .backToLogin{
+    border-radius: 10px;
+    width: 300px;
+    height: 40px;
+    border:none;
+    margin-top:20px;
+    background: rgb(164, 216, 253);
+    
+}
+
+.backTo .backToLogin a{
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+.loginLink:hover , .backToLogin:hover {
+  
+    background-color: #0171d3;
+    color:white;
+   
+}

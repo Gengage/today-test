@@ -1,0 +1,380 @@
+@font-face {
+    font-family: 'KCC-Hanbit';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/KCC-Hanbit.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin:0;
+    padding:0;
+    font-family: 'KCC-Hanbit';
+}
+body{
+    height:100vh;
+}
+a{
+	text-decoration:none;
+}
+
+/* gnb파트 */
+.gnb ul,li {
+	list-style:none;
+}
+.gnb{
+    width:100%;
+    /* border:1px solid red; */
+    display:flex;
+    position: fixed;
+    font-size: 30px;
+    background-color: rgb(229, 54, 30);
+    z-index: 2;
+    
+}
+
+.gnb a{
+    color:blue;
+}
+.gnb ul{
+    display:flex;
+    justify-content: center;
+     align-items: center;
+    /*  border:1px solid blue; */
+     width:100%;
+     justify-content: space-around ; 
+}
+.logo img{
+    width:8rem;
+    margin:0.5rem;
+   border-radius: 50%;
+    /* border:1px solid red; */
+}/* 
+.info, .theater , .goods       미구현 페이지
+{
+    text-decoration: line-through;
+
+} */
+
+.showinfo
+{
+    font-size: 25px;
+    width:700px;
+    height:100px;
+    position: absolute;
+   /*  border:1px solid purple; */
+    left:3%;
+    top:30%;
+}
+
+/* 로그인 버튼 */
+.login_button{
+    position: absolute;
+    display:flex;
+    font-size: 30px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    left:86%;
+    top:20%;
+    border-radius: 20px;
+    width:10rem;
+    height:5rem;
+    color:rgb(229, 54, 30);
+    border:1px solid;
+    z-index: 1;
+}
+.login_button:hover{
+    background-color: #0171d3;
+    color:white;
+}
+/* 로그인후 정보버튼 */
+.login_info{
+    position: absolute;
+    display:flex;
+    font-size: 35px;
+    left:82%;
+    top:20%;
+    padding-left: 15px;
+    border-radius: 10%;
+    width:20rem;
+    height:8rem;
+    border:1px solid rgb(229, 54, 30);
+    z-index: 1;
+}
+.login_info p{
+    width:100%;
+    margin-top: 20px;
+    /* border:1px solid purple; */
+}
+.login_info .profile{
+    position: absolute;
+    left:70%;
+    top:16%;
+    border-radius: 50%;
+    width:70px;
+    height:70px;
+}
+.login_info .move
+{   border:none;
+    margin-left: 10px;
+    background-color: white;
+    cursor: pointer;
+    position: absolute;
+    font-size: 23px;
+    left:2%;
+    top:60%;
+}
+.login_info .logout
+{
+    border:none;
+    background-color: white;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 10px;
+    font-size: 23px;
+    left:40%;
+    top:60%;
+}
+/* 박스오피스 파트 */
+#wrap {
+    
+    position: absolute;
+    top:180px;
+	margin:0px;
+	padding:0px;
+	width:100%;
+}
+.container {
+	width:700px;
+    
+    float:right;
+    display:flex;
+    justify-content: center;
+}
+#best_search {
+	width:740px;
+	
+	padding-top:20px;
+	text-align:center;
+}
+#best_search li,dd {
+    
+    
+	display:inline-block;
+	vertical-align:middle;
+    display:flex;
+}
+#best_search li p {
+    
+	color:#393939;
+	font-size:40px;
+	font-weight:bold;
+	
+	margin-bottom: 10px;;
+}
+#wrap dd {
+    
+	margin:0px;
+}
+#wrap dd a.t{     
+    
+    margin-bottom: 10px;
+	cursor:pointer;
+	color:#4b4b4b;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	width:20rem;
+	white-space:nowrap;
+	display:inline-block;
+    line-height: 50px;
+	font-size:30px;
+	text-align:left;
+	padding-right:13px;
+	font-weight:bold;
+	vertical-align:middle;
+	border:5px solid
+}
+#wrap dd .num {
+	background-color:#4b4b4b;
+	color:#fff;
+	font-size:15px;
+	margin-right:3px;
+	vertical-align:middle;
+	width:20px;
+	height:50px;
+	float:left;
+	line-height:50px;
+	text-align:center;
+}
+#wrap .best_add {
+	border:1px solid #bebebe;
+	color:rgb(229, 54, 30);
+	font-size: 30px;
+    width:50px;
+    
+    padding-bottom: 10px;
+}
+/* 푸터파트 */
+footer {
+    transform: translateY(05vh);
+    position: absolute;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    bottom:0;
+    background-color: black;
+    color:white;
+    width:100%;
+    height: 50px;
+  }
+/* 모달 파트 */
+.modal-container{
+    position: fixed; 
+    left: 0; top: 0; right: 0;
+    z-index: 1;
+    width: 100%; height: 100vh;
+    display: none;
+    z-index: 5;
+}
+.modal{
+    border: 1px solid white;
+    width: 30%; height: 300px; min-width: 300px;
+    overflow: auto;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white; font-size: .8rem; font-weight: 500;
+    box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, .3);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: none;
+   
+}
+.modal header{
+    font-size: 30px;
+    height: 40px; line-height: 40px;
+    width: 100%;
+    /* border: 1px solid red; */
+    text-align: center;
+    
+}
+.modal .body{
+    flex: 1;
+    font-size: 40px;
+    margin-top:20px;
+    margin-left:10px;
+    /* border: 1px solid green; */
+}
+.modal modal-footer{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+.modal modal-footer button{
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: black;
+    border:1px solid black;
+    background-color: white;
+    font-size: 30px; 
+    font-weight: bold;
+    margin-right:10px;
+    margin-bottom: 10px;
+    margin-top:10px;
+    
+}
+.modal-container.show{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .8);
+    backdrop-filter: blur(10px);
+}
+  @media (max-width: 1320px) {
+    .login_button {
+        position: absolute;
+        width:9rem;
+        font-size: 20px; 
+        left:65%;
+        top:69%; }
+  }
+@media (max-width: 1320px) {
+    .container {
+        position: absolute;
+        left:60%; }
+  }
+
+@media (max-width: 1320px) {
+    #best_search li p, #wrap dd a.t {
+        font-size: 25px;
+        width:20rem; }
+  }
+  @media (max-width: 1030px) {
+    .showinfo {
+       /*  border:1px solid red; */
+        height:200px;
+        width:400px;
+        font-size: 20px;
+         }
+  }
+  @media (max-width: 885px) {
+    #best_search li p, #wrap dd a.t {
+        font-size: 20px;
+        width:10rem; }
+  }
+
+  @media (max-width: 610px) {
+    .showinfo {
+       
+        top:30%;
+        /* border:1px solid red; */
+        height:200px;
+        width:400px;
+        font-size: 16px;
+         }
+  }
+  @media (max-width: 1860px) {
+    .login_info {
+        border:1px solid rgb(229, 54, 30);
+        position: absolute;
+        width:18rem;
+        font-size: 25px; 
+        left:60%;
+        top:71%; }
+  }
+  @media (max-width: 885px) {
+    .login_info {
+        border:1px solid rgb(229, 54, 30);
+        position: absolute;
+        width:9rem;
+        font-size: 15px; 
+        left:60%;
+        top:70%; }
+  }
+  @media (max-width: 1860px) {
+    .login_info .profile {
+        width:60px;
+        height:60px;
+        top:12%;
+       left:65%; }
+  }
+  @media (max-width: 1860px) {
+    .login_info .logout,.login_info .move {
+        font-size: 17px;
+         }
+  }
+  @media (max-width: 885px) {
+    .login_info .profile {
+        width:40px;
+        height:40px;
+        top:12%;
+       left:65%; }
+  }
+  @media (max-width: 885px) {
+    .login_info .logout,.login_info .move {
+        font-size: 12px;
+         }
+  }
